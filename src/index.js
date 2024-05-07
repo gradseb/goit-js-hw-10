@@ -44,7 +44,7 @@ function displayCountries(countries) {
   countries.forEach(country => {
     const li = document.createElement('li');
     li.textContent = country.name.official;
-    li.addEventListener('click', () => displayCountryInfo(country));
+    li.addEventListener('click', () => displayCountryInfo(div.innerHTML));
     countryList.appendChild(li);
   });
 }
@@ -56,8 +56,8 @@ function displayCountryInfo(country) {
         <h2>${country.name.official}</h2>
         <p>Capital: ${country.capital}</p>
         <p>Population: ${country.population}</p>
-        <img src="${country.flags.svg}" alt="Flag of ${country.name.official}">
+        <img src="${country.flags.png}" alt="Flag of ${country.name.official}">
         <p>Languages: ${Object.values(languages)}</p>
-    `;
+        `;
   countryInfo.appendChild(div);
 }
