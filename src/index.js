@@ -85,7 +85,7 @@ function displayCountryInfo(country) {
     <p>Capital: ${country.capital}</p>
     <p>Population: ${country.population}</p>
     <img src="${country.flags.png}" 
-    alt="Flag of ${country.name.official}" width="200" height="100">
+    alt="Flag of ${country.name.official}" width="200" height="100"  style= "border:1px solid black";>
     <p>Languages: ${languagesString}</p>
   `;
 
